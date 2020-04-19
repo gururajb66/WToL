@@ -10,5 +10,10 @@
     },
     "engines": {
     "node": "12.16.x"
+  },
+    "dependencies":{
+  "express":"latest",
+  "body-parser":"latest",
+  "fs-extra":"latest"
   }
 }
