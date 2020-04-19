@@ -1,0 +1,177 @@
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+<!--  If necessary, please modify the charset parameter to specify the        -->
+<!--  character set of your HTML page.                                        -->
+<!--  ----------------------------------------------------------------------  -->
+
+<META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+ function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
+</script>
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: Please add the following <FORM> element to your page.             -->
+<!--  ----------------------------------------------------------------------  -->
+
+<form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+
+<input type=hidden name='captcha_settings' value='{"keyname":"catcha","fallback":"true","orgId":"00DR0000001znP5","ts":""}'>
+<input type=hidden name="oid" value="00DR0000001znP5">
+<input type=hidden name="retURL" value="http://google.com">
+
+<!--  ----------------------------------------------------------------------  -->
+<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+<!--  these lines if you wish to test in debug mode.                          -->
+<!--  <input type="hidden" name="debug" value=1>                              -->
+<!--  <input type="hidden" name="debugEmail"                                  -->
+<!--  value="gururaj.basavaraj@cox.com">                                      -->
+<!--  ----------------------------------------------------------------------  -->
+
+<label for="first_name">First Name</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /><br>
+
+<label for="last_name">Last Name</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /><br>
+
+<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+
+<label for="company">Company</label><input  id="company" maxlength="40" name="company" size="20" type="text" /><br>
+
+<label for="city">City</label><input  id="city" maxlength="40" name="city" size="20" type="text" /><br>
+
+<label for="state">State/Province</label><input  id="state" maxlength="20" name="state" size="20" type="text" /><br>
+
+<label for="street">Street</label><textarea name="street"></textarea><br>
+
+<label for="zip">Zip</label><input  id="zip" maxlength="20" name="zip" size="20" type="text" /><br>
+
+<label for="country">Country</label><input  id="country" maxlength="40" name="country" size="20" type="text" /><br>
+
+<label for="description">Description</label><textarea name="description"></textarea><br>
+
+<label for="lead_source">Lead Source</label><select  id="lead_source" name="lead_source"><option value="">--None--</option><option value="Account Based Marketing">Account Based Marketing</option>
+<option value="Call List">Call List</option>
+<option value="CAPS Lead">CAPS Lead</option>
+<option value="Care Agent">Care Agent</option>
+<option value="Cox.com/Chat">Cox.com/Chat</option>
+<option value="Cox Blue">Cox Blue</option>
+<option value="CTAM">CTAM</option>
+<option value="Customer Referral">Customer Referral</option>
+<option value="Direct Mail">Direct Mail</option>
+<option value="eComm">eComm</option>
+<option value="Email">Email</option>
+<option value="Employee Lead">Employee Lead</option>
+<option value="Enterprise">Enterprise</option>
+<option value="eTail">eTail</option>
+<option value="Event">Event</option>
+<option value="Field Prospecting">Field Prospecting</option>
+<option value="Inbound Call">Inbound Call</option>
+<option value="Industry/Organization">Industry/Organization</option>
+<option value="Internal Employee">Internal Employee</option>
+<option value="Mid Market (Echelon)">Mid Market (Echelon)</option>
+<option value="Networking">Networking</option>
+<option value="Non-Paid Referral Partner">Non-Paid Referral Partner</option>
+<option value="OBTM (Outbound Telemarketing)">OBTM (Outbound Telemarketing)</option>
+<option value="Outbound Call">Outbound Call</option>
+<option value="Out of Home (Billboard/Poster)">Out of Home (Billboard/Poster)</option>
+<option value="Public Relations">Public Relations</option>
+<option value="Purchased List">Purchased List</option>
+<option value="Radio">Radio</option>
+<option value="Refer-a-Biz">Refer-a-Biz</option>
+<option value="Referral">Referral</option>
+<option value="Referral Agent Partner">Referral Agent Partner</option>
+<option value="Selling Agent Partner">Selling Agent Partner</option>
+<option value="Social">Social</option>
+<option value="Social Prospecting">Social Prospecting</option>
+<option value="Web Lead (Pardot/Eloqua)">Web Lead (Pardot/Eloqua)</option>
+</select><br>
+
+<label for="industry">Industry</label><select  id="industry" name="industry"><option value="">--None--</option><option value="Educational Services">Educational Services</option>
+<option value="Executive, Legislative, and General Government except Finance">Executive, Legislative, and General Government except Finance</option>
+<option value="Administration of Economic Programs">Administration of Economic Programs</option>
+<option value="Administration of Environmental Quality and Housing Programs">Administration of Environmental Quality and Housing Programs</option>
+<option value="Administration of Human Resource Programs">Administration of Human Resource Programs</option>
+<option value="Justice - Public Order and Safety">Justice - Public Order and Safety</option>
+<option value="National Security and International Affairs">National Security and International Affairs</option>
+<option value="Social Services">Social Services</option>
+<option value="United State Postal Service">United State Postal Service</option>
+<option value="Health Services">Health Services</option>
+<option value="Hotels, rooming houses, camps, and other lodging places">Hotels, rooming houses, camps, and other lodging places</option>
+<option value="Agricultural Production Crops">Agricultural Production Crops</option>
+<option value="Agricultural Services">Agricultural Services</option>
+<option value="Communications">Communications</option>
+<option value="Agriculture Livestock Production &amp; Animal Specialties">Agriculture Livestock Production &amp; Animal Specialties</option>
+<option value="Amusement and recreation services">Amusement and recreation services</option>
+<option value="Apparel and accessory stores">Apparel and accessory stores</option>
+<option value="Apparel and other textile products">Apparel and other textile products</option>
+<option value="Automotive dealers and gasoline service stations">Automotive dealers and gasoline service stations</option>
+<option value="Building construction--general contractors and operative builders">Building construction--general contractors and operative builders</option>
+<option value="Building materials, hardware, garden supply, and mobile home dealers">Building materials, hardware, garden supply, and mobile home dealers</option>
+<option value="Business Services">Business Services</option>
+<option value="Chemicals and allied products">Chemicals and allied products</option>
+<option value="Coal mining">Coal mining</option>
+<option value="Construction--Special trade contractors">Construction--Special trade contractors</option>
+<option value="Depository institutions">Depository institutions</option>
+<option value="Eating and drinking places">Eating and drinking places</option>
+<option value="Electric, gas, and sanitary services">Electric, gas, and sanitary services</option>
+<option value="Electronic and other electric equipment">Electronic and other electric equipment</option>
+<option value="Engineering, accounting, research, management, and related services">Engineering, accounting, research, management, and related services</option>
+<option value="Fabricated metal products">Fabricated metal products</option>
+<option value="Fishing, hunting, and trapping">Fishing, hunting, and trapping</option>
+<option value="Food and kindred products">Food and kindred products</option>
+<option value="Food stores">Food stores</option>
+<option value="Forestry">Forestry</option>
+<option value="Furniture and fixtures">Furniture and fixtures</option>
+<option value="General merchandise stores">General merchandise stores</option>
+<option value="Heavy construction other than buildings construction--contractors">Heavy construction other than buildings construction--contractors</option>
+<option value="Holding and other investment offices, except trusts">Holding and other investment offices, except trusts</option>
+<option value="Home furniture, furnishings, and equipment stores">Home furniture, furnishings, and equipment stores</option>
+<option value="Industrial machinery and equipment">Industrial machinery and equipment</option>
+<option value="Instruments and related products">Instruments and related products</option>
+<option value="Insurance agents, brokers, and services">Insurance agents, brokers, and services</option>
+<option value="Insurance carriers">Insurance carriers</option>
+<option value="Leather and leather products">Leather and leather products</option>
+<option value="Legal services">Legal services</option>
+<option value="Local and interurban passenger transportation">Local and interurban passenger transportation</option>
+<option value="Lumber and wood products">Lumber and wood products</option>
+<option value="Membership organizations">Membership organizations</option>
+<option value="Metal mining">Metal mining</option>
+<option value="Miscellaneous manufacturing industries">Miscellaneous manufacturing industries</option>
+<option value="Miscellaneous retail">Miscellaneous retail</option>
+<option value="Motor freight transportation and warehousing">Motor freight transportation and warehousing</option>
+<option value="Museums, art galleries, and botanical and zoological gardens">Museums, art galleries, and botanical and zoological gardens</option>
+<option value="Non-Classifiable Establishments">Non-Classifiable Establishments</option>
+<option value="Nondepository credit institutions">Nondepository credit institutions</option>
+<option value="Nonmetallic minerals, except fuels">Nonmetallic minerals, except fuels</option>
+<option value="Oil and gas extraction">Oil and gas extraction</option>
+<option value="Paper and allied products">Paper and allied products</option>
+<option value="Personal services">Personal services</option>
+<option value="Petroleum and coal products">Petroleum and coal products</option>
+<option value="Pipelines, except natural gas">Pipelines, except natural gas</option>
+<option value="Primary metal industries">Primary metal industries</option>
+<option value="Printing and publishing">Printing and publishing</option>
+<option value="Private Households">Private Households</option>
+<option value="Public Finance, Taxation, Monetary Policy">Public Finance, Taxation, Monetary Policy</option>
+<option value="Railroad Transportation">Railroad Transportation</option>
+<option value="Real estate">Real estate</option>
+<option value="Rubber and miscellaneous plastics products">Rubber and miscellaneous plastics products</option>
+<option value="Security and commodity brokers, dealers, exchanges, and services">Security and commodity brokers, dealers, exchanges, and services</option>
+<option value="Stone, clay, and glass products">Stone, clay, and glass products</option>
+<option value="Textile mill products">Textile mill products</option>
+<option value="Tobacco products">Tobacco products</option>
+<option value="Transportation by air">Transportation by air</option>
+<option value="Transportation equipment">Transportation equipment</option>
+<option value="Transportation services">Transportation services</option>
+<option value="Water transportation">Water transportation</option>
+<option value="Wholesale trade - durable goods">Wholesale trade - durable goods</option>
+<option value="Wholesale trade - nondurable goods">Wholesale trade - nondurable goods</option>
+</select><br>
+
+<label for="rating">Rating</label><select  id="rating" name="rating"><option value="">--None--</option><option value="Hot">Hot</option>
+<option value="Warm">Warm</option>
+<option value="Cold">Cold</option>
+</select><br>
+
+<div class="g-recaptcha" data-sitekey="fefeefe"></div><br>
+<input type="submit" name="submit">
+
+</form>
