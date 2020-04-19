@@ -1,8 +1,7 @@
 {
     "name": "WToL",
     "description": "Simple Hello World Node.js sample for Azure App Service",
-    "version": "1.0.1",
-    "private": true,
+    "version": "1.0.1"
     "scripts": {
         "start": "node index.js"
     },
