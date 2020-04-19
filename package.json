@@ -1,12 +1,10 @@
 {
     "name": "app-service-hello-world",
     "description": "Simple Hello World Node.js sample for Azure App Service",
-    "version": "0.0.1",
-    "private": true,
-    "license": "MIT",
-    "author": "Microsoft",
+    "version": "1.0.1",
+    "private": true
     "scripts": {
-        "start": "index.js"
+        "start": "node index.js"
     },
     "engines": {
     "node": "12.16.x"
